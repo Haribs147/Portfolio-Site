@@ -54,6 +54,7 @@
         .flex-container2 {
             margin-left: 100px;
             margin-top: 250px;
+            padding-bottom: 200px;
             gap: 0px;
             display: flex;
             justify-content: center;
@@ -78,14 +79,14 @@
         p{
             margin: 0;
         }
-        #par1{
+        .par1{
             font-size: 35px;
         }
-        #par2{
+        .par2{
             font-size: 65px;
             font-weight: bold;
         }
-        #par3{
+        .par3{
             font-size: 50px;
         }
         .buttons{
@@ -126,6 +127,50 @@
             width: 45px;
             border-radius: 50%;
         }
+        #About{
+            position: relative;
+            padding-top: 50px;
+            padding-bottom: 450px;
+        }
+        #grid-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 50px 100px;
+            max-width: 1800px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        
+        #grid-item-1 {
+            grid-column: 1 / 3;
+            grid-row: 1 / 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grid-item-2-3{
+            border: 2px solid black;
+            border-radius: 10%;
+        }
+        #grid-item-4 {
+            grid-column: span 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+
+ 
+
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -140,7 +185,7 @@
             </div>
             <nav>
                 <ul id="nav-links">
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#About">About</a></li>
                     <li><a href="#experience">Experience</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact Me</a></li>
@@ -155,9 +200,9 @@
                 <img src="./Images/zdj.png" alt="Michael Jagodzinski" class="main-photo">
             </div>
             <div class="flex-container3">
-                <p id= "par1">Hello, I'm</p>
-                <p id= "par2">Michael</p>
-                <p id= "par3">Software Developer</p>
+                <p class= "par1">Hello, I'm</p>
+                <p class= "par2">Michael</p>
+                <p class= "par3">Software Developer</p>
                 <div>
                     <a href="./Files/CV.pdf" class="buttons CV" download="Michael_Jagodzinski_CV.pdf">Download CV</a>
                     <a href="#contact" class="buttons INFO">Contact Info</a>
@@ -170,6 +215,26 @@
                         <img class="logos" src="./Images/github.svg" alt="GitHub logo">
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- About me -->
+    <section id="About">
+        <div class="flex-container">
+            <p class="par2" style="padding-bottom: 50px;">About Me</p>
+        </div>
+        <div id="grid-container">
+            <div id="grid-item-1">
+            <img src="./Images/Robot.png" alt="Robot image">
+            </div>
+            <div class="grid-item-2-3">
+                <a>Experience</a>
+            </div>
+            <div class="grid-item-2-3">
+                <a>Education</a>
+            </div>
+            <div id="grid-item-4">
+                <a>Text</a>
             </div>
         </div>
     </section>
