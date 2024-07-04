@@ -25,9 +25,10 @@
             display: flex;  
             justify-content: space-evenly; /* można zamienić na space around */
             align-items: center;
-            max-width: auto;
-            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 100px;
             margin-top: 40px;
+            margin-bottom: 250px;
             padding: 0 20px;
         }
         
@@ -52,8 +53,6 @@
         }
 
         .flex-container2 {
-            margin-left: 100px;
-            margin-top: 250px;
             padding-bottom: 200px;
             gap: 0px;
             display: flex;
@@ -127,50 +126,126 @@
             width: 45px;
             border-radius: 50%;
         }
+
         #About{
             position: relative;
-            padding-top: 50px;
-            padding-bottom: 450px;
+            padding-top: 150px;
+            padding-bottom: 200px;
+        }
+        .center{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 150px;
         }
         #grid-container{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(2, auto);
             gap: 50px 100px;
-            max-width: 1800px;
-            width: 100%;
+            max-width: 2000px;
+            width: 95%;
             margin: 0 auto;
             padding: 20px;
         }
-
-        
         #grid-item-1 {
             grid-column: 1 / 3;
             grid-row: 1 / 3;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: flex-end;
+            align-items: flex-end;
         }
         .grid-item-2-3{
+            text-align: center;
+            margin-top: 150px;
             border: 2px solid black;
-            border-radius: 10%;
+            border-radius: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            min-width: 425px;
+            min-height: 100px;
         }
         #grid-item-4 {
             grid-column: span 2;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: aqua;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+        .par4{
+            font-size: 24px;
+        }
+        .par5{
+            font-size: 20px;
         }
         img {
             max-width: 100%;
             height: auto;
             border-radius: 50%;
         }
-
-
- 
-
+        .About-icons{
+            width: 40px;
+            border-radius: 0%;
+        }
+        
+        #experience{
+            position: relative;
+            padding-top: 100px;
+            padding-bottom: 200px;
+        }
+        
+        .flex-row{
+            padding: 50px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            border: 2px solid black;
+            border-radius: 32px;
+        }
+        .flex-container-experience{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        div>.flex-container-experience{
+            max-width: 700px;
+            max-height: 1000px;
+        }
+        .flex-item-experience{
+            min-width: 180px;
+            min-height: 50px;
+            
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            font-size: 20px;
+            padding: 20px;
+        }
+        .icon-experience{
+            padding-right: 5px;
+            width: 30px;
+        }
+        .flex-item-experience > div{
+            display: flex;
+        }
+        .flex-item-experience > p{
+            padding-left: 38px;
+        }
+        
+        .bold{
+            font-weight: bold;
+            font-size: 22px;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -220,21 +295,124 @@
     </section>
     <!-- About me -->
     <section id="About">
-        <div class="flex-container">
-            <p class="par2" style="padding-bottom: 50px;">About Me</p>
+        <div class="center">
+            <p class="par4">Learn more</p>
+            <p class="par3" style="font-weight: bold;">About Me</p>
         </div>
         <div id="grid-container">
             <div id="grid-item-1">
-            <img src="./Images/Robot.png" alt="Robot image">
+            <img src="./Images/Robot.png" alt="Robot image" style="min-width: 600px;">
             </div>
             <div class="grid-item-2-3">
-                <a>Experience</a>
+                <img src="./Images/people.svg" alt="people icon" class="About-icons">
+                <p class="par4" style="font-weight: bold;">Experience</p>
+                <p class="par5">Programming Trainer in Coding Gigants</p>
+                <p class="par5">2022 - Now</p>
             </div>
             <div class="grid-item-2-3">
-                <a>Education</a>
+                <img src="./Images/mortarboard.svg" alt="mortarboard icon" class="About-icons">
+                <p class="par4" style="font-weight: bold;">Education</p>
+                <p class="par5">Applied Computer Science at Warsaw University of Technology</p>
+                <p class="par5">2022 - Now</p>
             </div>
-            <div id="grid-item-4">
-                <a>Text</a>
+            <div id="grid-item-4" class="par4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis neque dictum, ornare neque ac, vulputate diam. Curabitur quis scelerisque lacus. Maecenas at commodo lorem, ac iaculis ante. Phasellus nunc turpis, consectetur sed faucibus vel, aliquam in risus. Vivamus ullamcorper purus sapien, in tempor est sodales sed. Sed consectetur dui ac lorem venenatis mattis.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Experience -->
+    <section id="experience">
+        <div class="center">
+            <p class="par4">Explore My</p>
+            <p class="par3" style="font-weight: bold;">Experience</p>
+        </div>
+        <div class="flex-container2" style="gap: 100px;">
+            <div class="flex-row">
+                <p class="par1" style="font-weight: bold;">Languages</p>
+                <div class="flex-container-experience">
+                    <div class="flex-item-experience">
+                        <div>
+                            <img src="./Images/star.svg" class="icon-experience">
+                            <p class="bold">C</p>
+                        </div>  
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="flex-item-experience">
+                        <div>
+                            <img src="./Images/star.svg" class="icon-experience">
+                            <p class="bold">Python</p>
+                        </div>  
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="flex-item-experience">
+                        <div>
+                            <img src="./Images/star.svg" class="icon-experience">
+                            <p class="bold">Java</p>
+                        </div>  
+                        <p>Experienced</p>
+                    </div>
+                    <div class="flex-item-experience">
+                        <div>
+                            <img src="./Images/star.svg" class="icon-experience">
+                            <p class="bold">SQL</p>
+                        </div>  
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="flex-item-experience">
+                        <div style="padding-right: 312px;">
+                            <img src="./Images/star.svg" class="icon-experience">
+                            <p class="bold">JavaScript</p>
+                        </div>  
+                        <p>Basic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row">
+                <p class="par1" style="font-weight: bold;">Other</p>
+                <div class="flex-container-experience">
+                    <div class="flex-item-experience">
+                        <div>
+                            <img src="./Images/star.svg" class="icon-experience">
+                            <p class="bold">Git</p>
+                        </div>  
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="flex-item-experience">
+                        <div>
+                            <img src="./Images/star.svg" class="icon-experience">
+                            <p class="bold">GitHub</p>
+                        </div>  
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="flex-item-experience">
+                        <div>
+                            <img src="./Images/star.svg" class="icon-experience">
+                            <p class="bold">OOP</p>
+                        </div>  
+                        <p>Experienced</p>
+                    </div>
+                    <div class="flex-item-experience">
+                        <div>
+                            <img src="./Images/star.svg" class="icon-experience">
+                            <p class="bold">Linux</p>
+                        </div>  
+                        <p>Intermediate</p>
+                    </div>
+                    <div class="flex-item-experience">
+                        <div>
+                            <img src="./Images/star.svg" class="icon-experience">
+                            <p class="bold">Bash</p>
+                        </div>  
+                        <p>Basic</p>
+                    </div>
+                    <div class="flex-item-experience">
+                        <div>
+                            <img src="./Images/star.svg" class="icon-experience">
+                            <p class="bold">Azure DevOps</p>
+                        </div>  
+                        <p>Basic</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
