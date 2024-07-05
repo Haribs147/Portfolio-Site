@@ -182,7 +182,7 @@
         .par5{
             font-size: 20px;
         }
-        img {
+        #round-img {
             max-width: 100%;
             height: auto;
             border-radius: 50%;
@@ -194,11 +194,11 @@
         
         #experience{
             position: relative;
-            padding-top: 100px;
-            padding-bottom: 200px;
+            padding-top: 150px;
+            padding-bottom: 125px;
         }
         
-        .flex-row{
+        .flex-col{
             padding: 50px 0px;
             display: flex;
             flex-direction: column;
@@ -245,6 +245,62 @@
         .bold{
             font-weight: bold;
             font-size: 22px;
+        }   
+        #projects{
+            position: relative;
+            padding-top: 50px;
+            padding-bottom: 125px;
+        }
+        .Projects-images{
+            width: 435px;
+            height: 472.5px;
+            padding: 20px 20px;
+            border-radius: 50px;
+        }
+
+        #contact{
+            position: relative;
+            padding-top: 150px;
+            padding-bottom: 125px;
+        }
+        #contact-col-flexbox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 150px;
+        }
+        #contact-row-flexbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            border: 2px solid black;
+            border-radius: 32px;
+            padding: 20px 20px;
+        }
+        .mail-flexbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 28px;
+            padding: 20px 20px;
+        }
+        .links{
+            text-decoration: none;
+            color: black;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        .links:hover{
+            color: #333; 
+            text-shadow: 0 0 10px rgba(0, 3, 6, 0.276); 
+        }
+        
+        footer p{
+            padding-top: 100px;
+            text-align: center;
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -268,6 +324,7 @@
             </nav>
         </div>
     </section>
+
     <!-- Front page -->
     <section>
         <div class="flex-container2">
@@ -293,11 +350,12 @@
             </div>
         </div>
     </section>
+
     <!-- About me -->
     <section id="About">
         <div class="center">
-            <p class="par4">Learn more</p>
-            <p class="par3" style="font-weight: bold;">About Me</p>
+            <p class="par1">Learn more</p>
+            <p class="par2" style="font-weight: bold;">About Me</p>
         </div>
         <div id="grid-container">
             <div id="grid-item-1">
@@ -320,14 +378,15 @@
             </div>
         </div>
     </section>
+
     <!-- Experience -->
     <section id="experience">
         <div class="center">
-            <p class="par4">Explore My</p>
-            <p class="par3" style="font-weight: bold;">Experience</p>
+            <p class="par1">Explore My</p>
+            <p class="par2" style="font-weight: bold;">Experience</p>
         </div>
         <div class="flex-container2" style="gap: 100px;">
-            <div class="flex-row">
+            <div class="flex-col">
                 <p class="par1" style="font-weight: bold;">Languages</p>
                 <div class="flex-container-experience">
                     <div class="flex-item-experience">
@@ -367,7 +426,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-row">
+            <div class="flex-col">
                 <p class="par1" style="font-weight: bold;">Other</p>
                 <div class="flex-container-experience">
                     <div class="flex-item-experience">
@@ -416,5 +475,65 @@
             </div>
         </div>
     </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="center" style="margin-bottom: 100px;">
+            <p class="par1">Browse My</p>
+            <p class="par2" style="font-weight: bold;">Projects</p>
+        </div>
+        <div class="flex-container2" style="gap: 50px;">
+            <div class="flex-col">
+                <img src="./Images/yolo.png" alt="yolo detection image" class="Projects-images">
+                <p class="par5" style="font-weight: bold;">Real-Time Object Detection</p>
+                <a href="./Files/CV.pdf" class="buttons CV" download="Michael_Jagodzinski_CV.pdf">GitHub</a>
+            </div>
+            <div class="flex-col">
+                <img src="./Images/tetris.png" alt="yolo detection image" class="Projects-images">
+                <p class="par5" style="font-weight: bold;">Tetris Game</p>
+                <a href="./Files/CV.pdf" class="buttons CV" download="Michael_Jagodzinski_CV.pdf">GitHub</a>
+            </div>
+            <div class="flex-col">
+                <img src="./Images/Compressor.jpg" alt="yolo detection image" class="Projects-images">
+                <p class="par5" style="font-weight: bold;">Compressor</p>
+                <a href="./Files/CV.pdf" class="buttons CV" download="Michael_Jagodzinski_CV.pdf">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact">
+        <div class="center" style="margin-bottom: 30px;">
+            <p class="par1">Get In Touch</p>
+            <p class="par2" style="font-weight: bold;">Contact Me</p>
+        </div>
+        <div id="contact-col-flexbox">
+            <div id="contact-row-flexbox" >
+                <div class="mail-flexbox">
+                    <img src="./Images/envelope-fill.svg" class="icon-experience">
+                    <a href="mailto:m.jagodzinski1234@gmail.com" class="links">m.jagodzinski1234@gmail.com</a>
+                </div>
+                <div class="mail-flexbox">
+                    <img src="./Images/linkedin.svg" class="icon-experience">
+                    <a href="https://www.linkedin.com/in/micha%C5%82-jagodzinski-a13243248/" target="_blank" class="links">Linkedin</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>        
+        <div class="flex-container" style="margin-bottom: 0px;">
+            <nav>
+                <ul id="nav-links" style="padding-left: 0px;">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p>Copyright © 2024 Michael Jagodzinski. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
