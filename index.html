@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michał Jagodziński</title>
 
    
     <style>
-
+        #outer-wrapper{
+            overflow-x:hidden;
+        }
         body {
-            width: 100%;
-            min-height: 100%;
-            position: relative;
+            position:relative;
             font-family: Poppins, sans-serif;
         }
         
@@ -522,233 +522,235 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Navbar -->
-    <section>
-        <div class="flex-container">
-            <div class="logo">
-                Michael Jagodzinski      
+<div id="outer-wrapper">
+    <body>
+        <!-- Navbar -->
+        <section>
+            <div class="flex-container">
+                <div class="logo">
+                    Michael Jagodzinski      
+                </div>
+                <nav>
+                    <ul id="nav-links">
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav>
-                <ul id="nav-links">
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </nav>
-        </div>
-    </section>
+        </section>
 
-    <!-- Front page -->
-    <section>
-        <div class="flex-container2">
-            <div>
-                <img src="./Images/zdj.png" alt="Michael Jagodzinski" class="main-photo">
-            </div>
-            <div class="flex-container3">
-                <p class= "par1">Hello, I'm</p>
-                <p class= "par2">Michael</p>
-                <p class= "par3">Software Developer</p>
+        <!-- Front page -->
+        <section>
+            <div class="flex-container2">
                 <div>
-                    <a href="./Files/CV.pdf" class="buttons CV" download="Michael_Jagodzinski_CV.pdf">Download CV</a>
-                    <a href="#contact" class="buttons INFO">Contact Info</a>
+                    <img src="./Images/zdj.png" alt="Michael Jagodzinski" class="main-photo">
                 </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/micha%C5%82-jagodzinski-a13243248/" target="_blank">
-                        <img class="logos" src="./Images/linkedin.svg" alt="LinkedIn logo">
-                    </a>
-                    <a href="https://github.com/Haribs147" target="_blank">
-                        <img class="logos" src="./Images/github.svg" alt="GitHub logo">
-                    </a>
+                <div class="flex-container3">
+                    <p class= "par1">Hello, I'm</p>
+                    <p class= "par2">Michael</p>
+                    <p class= "par3">Software Developer</p>
+                    <div>
+                        <a href="./Files/CV.pdf" class="buttons CV" download="Michael_Jagodzinski_CV.pdf">Download CV</a>
+                        <a href="#contact" class="buttons INFO">Contact Info</a>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/micha%C5%82-jagodzinski-a13243248/" target="_blank">
+                            <img class="logos" src="./Images/linkedin.svg" alt="LinkedIn logo">
+                        </a>
+                        <a href="https://github.com/Haribs147" target="_blank">
+                            <img class="logos" src="./Images/github.svg" alt="GitHub logo">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About me -->
-    <section id="About">
-        <div class="center">
-            <p class="par1">Learn more</p>
-            <p class="par2" style="font-weight: bold;">About Me</p>
-        </div>
-        <div id="grid-container">
-            <div id="grid-item-1">
-                <img src="./Images/Robot.png" alt="Robot image" >
+        <!-- About me -->
+        <section id="About">
+            <div class="center">
+                <p class="par1">Learn more</p>
+                <p class="par2" style="font-weight: bold;">About Me</p>
             </div>
-            <div class="grid-item-2-3">
-                <img src="./Images/people.svg" alt="people icon" class="About-icons">
-                <p class="par4" style="font-weight: bold;">Experience</p>
-                <p class="par5">Programming Trainer in Coding Gigants</p>
-                <p class="par5">2022 - Now</p>
+            <div id="grid-container">
+                <div id="grid-item-1">
+                    <img src="./Images/Robot.png" alt="Robot image" >
+                </div>
+                <div class="grid-item-2-3">
+                    <img src="./Images/people.svg" alt="people icon" class="About-icons">
+                    <p class="par4" style="font-weight: bold;">Experience</p>
+                    <p class="par5">Programming Trainer in Coding Gigants</p>
+                    <p class="par5">2022 - Now</p>
+                </div>
+                <div class="grid-item-2-3">
+                    <img src="./Images/mortarboard.svg" alt="mortarboard icon" class="About-icons">
+                    <p class="par4" style="font-weight: bold;">Education</p>
+                    <p class="par5">Applied Computer Science at Warsaw University of Technology</p>
+                    <p class="par5">2022 - Now</p>
+                </div>
+                <div id="grid-item-4" class="par4">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis neque dictum, ornare neque ac, vulputate diam. Curabitur quis scelerisque lacus. Maecenas at commodo lorem, ac iaculis ante. Phasellus nunc turpis, consectetur sed faucibus vel, aliquam in risus. Vivamus ullamcorper purus sapien, in tempor est sodales sed. Sed consectetur dui ac lorem venenatis mattis.</p>
+                </div>
             </div>
-            <div class="grid-item-2-3">
-                <img src="./Images/mortarboard.svg" alt="mortarboard icon" class="About-icons">
-                <p class="par4" style="font-weight: bold;">Education</p>
-                <p class="par5">Applied Computer Science at Warsaw University of Technology</p>
-                <p class="par5">2022 - Now</p>
-            </div>
-            <div id="grid-item-4" class="par4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis neque dictum, ornare neque ac, vulputate diam. Curabitur quis scelerisque lacus. Maecenas at commodo lorem, ac iaculis ante. Phasellus nunc turpis, consectetur sed faucibus vel, aliquam in risus. Vivamus ullamcorper purus sapien, in tempor est sodales sed. Sed consectetur dui ac lorem venenatis mattis.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience -->
-    <section id="experience">
-        <div class="center">
-            <p class="par1">Explore My</p>
-            <p class="par2" style="font-weight: bold;">Experience</p>
-        </div>
-        <div class="flex-container2">
-            <div class="flex-col">
-                <p class="par1" style="font-weight: bold;">Languages</p>
-                <div class="flex-container-experience">
-                    <div class="flex-item-experience">
-                        <div>
-                            <img src="./Images/star.svg" class="icon-experience">
-                            <p class="bold">C</p>
-                        </div>  
-                        <p>Intermediate</p>
+        <!-- Experience -->
+        <section id="experience">
+            <div class="center">
+                <p class="par1">Explore My</p>
+                <p class="par2" style="font-weight: bold;">Experience</p>
+            </div>
+            <div class="flex-container2">
+                <div class="flex-col">
+                    <p class="par1" style="font-weight: bold;">Languages</p>
+                    <div class="flex-container-experience">
+                        <div class="flex-item-experience">
+                            <div>
+                                <img src="./Images/star.svg" class="icon-experience">
+                                <p class="bold">C</p>
+                            </div>  
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="flex-item-experience">
+                            <div>
+                                <img src="./Images/star.svg" class="icon-experience">
+                                <p class="bold">Python</p>
+                            </div>  
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="flex-item-experience">
+                            <div>
+                                <img src="./Images/star.svg" class="icon-experience">
+                                <p class="bold">Java</p>
+                            </div>  
+                            <p>Experienced</p>
+                        </div>
+                        <div class="flex-item-experience">
+                            <div>
+                                <img src="./Images/star.svg" class="icon-experience">
+                                <p class="bold">SQL</p>
+                            </div>  
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="flex-item-experience">
+                            <div style="padding-right: 312px;">
+                                <img src="./Images/star.svg" class="icon-experience">
+                                <p class="bold">JavaScript</p>
+                            </div>  
+                            <p>Basic</p>
+                        </div>
                     </div>
-                    <div class="flex-item-experience">
-                        <div>
-                            <img src="./Images/star.svg" class="icon-experience">
-                            <p class="bold">Python</p>
-                        </div>  
-                        <p>Intermediate</p>
-                    </div>
-                    <div class="flex-item-experience">
-                        <div>
-                            <img src="./Images/star.svg" class="icon-experience">
-                            <p class="bold">Java</p>
-                        </div>  
-                        <p>Experienced</p>
-                    </div>
-                    <div class="flex-item-experience">
-                        <div>
-                            <img src="./Images/star.svg" class="icon-experience">
-                            <p class="bold">SQL</p>
-                        </div>  
-                        <p>Intermediate</p>
-                    </div>
-                    <div class="flex-item-experience">
-                        <div style="padding-right: 312px;">
-                            <img src="./Images/star.svg" class="icon-experience">
-                            <p class="bold">JavaScript</p>
-                        </div>  
-                        <p>Basic</p>
+                </div>
+                <div class="flex-col">
+                    <p class="par1" style="font-weight: bold;">Other</p>
+                    <div class="flex-container-experience">
+                        <div class="flex-item-experience">
+                            <div>
+                                <img src="./Images/star.svg" class="icon-experience">
+                                <p class="bold">Git</p>
+                            </div>  
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="flex-item-experience">
+                            <div>
+                                <img src="./Images/star.svg" class="icon-experience">
+                                <p class="bold">GitHub</p>
+                            </div>  
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="flex-item-experience">
+                            <div>
+                                <img src="./Images/star.svg" class="icon-experience">
+                                <p class="bold">OOP</p>
+                            </div>  
+                            <p>Experienced</p>
+                        </div>
+                        <div class="flex-item-experience">
+                            <div>
+                                <img src="./Images/star.svg" class="icon-experience">
+                                <p class="bold">Linux</p>
+                            </div>  
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="flex-item-experience">
+                            <div>
+                                <img src="./Images/star.svg" class="icon-experience">
+                                <p class="bold">Bash</p>
+                            </div>  
+                            <p>Basic</p>
+                        </div>
+                        <div class="flex-item-experience">
+                            <div>
+                                <img src="./Images/star.svg" class="icon-experience">
+                                <p class="bold">Azure DevOps</p>
+                            </div>  
+                            <p>Basic</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="flex-col">
-                <p class="par1" style="font-weight: bold;">Other</p>
-                <div class="flex-container-experience">
-                    <div class="flex-item-experience">
-                        <div>
-                            <img src="./Images/star.svg" class="icon-experience">
-                            <p class="bold">Git</p>
-                        </div>  
-                        <p>Intermediate</p>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="center" style="margin-bottom: 100px;">
+                <p class="par1">Browse My</p>
+                <p class="par2" style="font-weight: bold;">Projects</p>
+            </div>
+            <div class="flex-container2" style="gap: 50px;">
+                <div class="flex-col">
+                    <img src="./Images/yolo.png" alt="yolo detection image" class="Projects-images">
+                    <p class="par5" style="font-weight: bold;">Real-Time Object Detection</p>
+                    <a href="https://github.com/Haribs147/Object-recognition" class="buttons CV" >GitHub</a>
+                </div>
+                <div class="flex-col">
+                    <img src="./Images/tetris.png" alt="yolo detection image" class="Projects-images">
+                    <p class="par5" style="font-weight: bold;">Tetris Game</p>
+                    <a href="https://github.com/Haribs147/Tetris" class="buttons CV" >GitHub</a>
+                </div>
+                <div class="flex-col">
+                    <img src="./Images/Compressor.jpg" alt="yolo detection image" class="Projects-images">
+                    <p class="par5" style="font-weight: bold;">Compressor</p>
+                    <a href="https://github.com/Haribs147/Algorithm-and-data-structures/tree/master/AiSD2023ZLab5" class="buttons CV" >GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Me -->
+        <section id="contact">
+            <div class="center" style="margin-bottom: 30px;">
+                <p class="par1">Get In Touch</p>
+                <p class="par2" style="font-weight: bold;">Contact Me</p>
+            </div>
+            <div id="contact-col-flexbox">
+                <div id="contact-row-flexbox" >
+                    <div class="mail-flexbox">
+                        <img src="./Images/envelope-fill.svg" class="icon-experience">
+                        <a href="mailto:m.jagodzinski1234@gmail.com" class="links">m.jagodzinski1234@gmail.com</a>
                     </div>
-                    <div class="flex-item-experience">
-                        <div>
-                            <img src="./Images/star.svg" class="icon-experience">
-                            <p class="bold">GitHub</p>
-                        </div>  
-                        <p>Intermediate</p>
-                    </div>
-                    <div class="flex-item-experience">
-                        <div>
-                            <img src="./Images/star.svg" class="icon-experience">
-                            <p class="bold">OOP</p>
-                        </div>  
-                        <p>Experienced</p>
-                    </div>
-                    <div class="flex-item-experience">
-                        <div>
-                            <img src="./Images/star.svg" class="icon-experience">
-                            <p class="bold">Linux</p>
-                        </div>  
-                        <p>Intermediate</p>
-                    </div>
-                    <div class="flex-item-experience">
-                        <div>
-                            <img src="./Images/star.svg" class="icon-experience">
-                            <p class="bold">Bash</p>
-                        </div>  
-                        <p>Basic</p>
-                    </div>
-                    <div class="flex-item-experience">
-                        <div>
-                            <img src="./Images/star.svg" class="icon-experience">
-                            <p class="bold">Azure DevOps</p>
-                        </div>  
-                        <p>Basic</p>
+                    <div class="mail-flexbox">
+                        <img src="./Images/linkedin.svg" class="icon-experience">
+                        <a href="https://www.linkedin.com/in/micha%C5%82-jagodzinski-a13243248/" target="_blank" class="links">Linkedin</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <div class="center" style="margin-bottom: 100px;">
-            <p class="par1">Browse My</p>
-            <p class="par2" style="font-weight: bold;">Projects</p>
-        </div>
-        <div class="flex-container2" style="gap: 50px;">
-            <div class="flex-col">
-                <img src="./Images/yolo.png" alt="yolo detection image" class="Projects-images">
-                <p class="par5" style="font-weight: bold;">Real-Time Object Detection</p>
-                <a href="https://github.com/Haribs147/Object-recognition" class="buttons CV" >GitHub</a>
+        <!-- footer -->
+        <footer>        
+            <div class="flex-container" style="margin-bottom: 0px;">
+                <nav>
+                    <ul id="nav-links" style="padding-left: 0px;">
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="flex-col">
-                <img src="./Images/tetris.png" alt="yolo detection image" class="Projects-images">
-                <p class="par5" style="font-weight: bold;">Tetris Game</p>
-                <a href="https://github.com/Haribs147/Tetris" class="buttons CV" >GitHub</a>
-            </div>
-            <div class="flex-col">
-                <img src="./Images/Compressor.jpg" alt="yolo detection image" class="Projects-images">
-                <p class="par5" style="font-weight: bold;">Compressor</p>
-                <a href="https://github.com/Haribs147/Algorithm-and-data-structures/tree/master/AiSD2023ZLab5" class="buttons CV" >GitHub</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Me -->
-    <section id="contact">
-        <div class="center" style="margin-bottom: 30px;">
-            <p class="par1">Get In Touch</p>
-            <p class="par2" style="font-weight: bold;">Contact Me</p>
-        </div>
-        <div id="contact-col-flexbox">
-            <div id="contact-row-flexbox" >
-                <div class="mail-flexbox">
-                    <img src="./Images/envelope-fill.svg" class="icon-experience">
-                    <a href="mailto:m.jagodzinski1234@gmail.com" class="links">m.jagodzinski1234@gmail.com</a>
-                </div>
-                <div class="mail-flexbox">
-                    <img src="./Images/linkedin.svg" class="icon-experience">
-                    <a href="https://www.linkedin.com/in/micha%C5%82-jagodzinski-a13243248/" target="_blank" class="links">Linkedin</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- footer -->
-    <footer>        
-        <div class="flex-container" style="margin-bottom: 0px;">
-            <nav>
-                <ul id="nav-links" style="padding-left: 0px;">
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
-            </nav>
-        </div>
-        <p>Copyright © 2024 Michael Jagodzinski. All Rights Reserved.</p>
-    </footer>
-</body>
+            <p>Copyright © 2024 Michael Jagodzinski. All Rights Reserved.</p>
+        </footer>
+    </body>
+</div>
 </html>
