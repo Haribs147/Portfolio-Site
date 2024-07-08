@@ -204,7 +204,7 @@
     /* Footer */
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1900px) {
     /* NAVBAR */
     .flex-container {
         display: flex;
@@ -262,36 +262,36 @@
         margin: 0 auto;
         padding: 0px;
     }
-    #gird-item1{
+    #grid-item-1{
         justify-content: center;
-        align-items: center;
     }
     #grid-item-1 > img{
         min-width: 150px;
-        width: 400px;
+        width: 600px;
     }
     .grid-item-2-3{
-        margin-top: 0px;
+        margin-top: 80px;
         border-radius: 32px;
         gap: 5px;
         min-width: 100px;
         min-height: 100px;
-        width: 250px;
-        padding: 0px 20px;
+        width: 300px;
+        padding: 20px 20px;
     }
     #grid-item-4 {
         display: flex;
         text-align: justify;
         text-justify: inter-word;
+        margin-right: 80px;
     }
     .par4{
-        font-size: 10px;
+        font-size: 16px;
     }
     .par5{
-        font-size: 10px;
+        font-size: 14px;
     }
     .About-icons{
-        width: 20px;
+        width: 35px;
     }
     /* Experience */
     #experience{
