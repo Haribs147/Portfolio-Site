@@ -1,5 +1,6 @@
 /* MEDIA */
-@media (max-width: 768px) {
+@media (min-width: 200px) and (max-width: 850px) {
+
     div#page {
         padding: 0;
     }
@@ -315,7 +316,7 @@
     /* Footer */
 }
 
-@media (max-width: 1600px) {
+@media (min-width: 850px) and (max-width: 2000px) {
     /* NAVBAR */
     .flex-container {
         display: flex;
